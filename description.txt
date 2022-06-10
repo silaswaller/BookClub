@@ -1,0 +1,21 @@
+Name: Silas Waller
+Project Title: Queer Book Club
+Project Stack: MERN
+Git Repo Link: https://github.com/silaswaller/BookClub
+
+Project Description:
+A wesbite for people to create a database of quer literature.
+
+New programming concepts I'm planning to learn:
+Login and registration
+
+Week 1 Features:
+- CRUD
+- Page navigation
+
+Week 2 Features:
+- Login and registration
+- CSS
+
+Product Backlog:
+- User can "read" a book and it will display that they have read that book when clicked on.
