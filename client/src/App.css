@@ -78,15 +78,19 @@ nav {
 }
 
 #newBookTitle {
+  margin-right: 47px;
 }
 
 #newBookAuthor {
+  margin-right: 31px;
 }
 
 #newBookCoverArt {
+  margin-right: 16px;
 }
 
 #newBookDescription {
+  margin-right: 5px;
 }
 
 .newBookInput {

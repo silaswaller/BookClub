@@ -28,7 +28,7 @@ const Form = (props) => {
                     <br/>
                     <div>
                         <label className="newBookLabel" id="newBookDescription">Description</label>
-                        <textarea className="newBookInput" name ="description" value={book.descriptiondescription} onChange={onChangeHandler} type="text" rows="5"></textarea>
+                        <textarea className="newBookInput" name ="description" value={book.description} onChange={onChangeHandler} type="text" rows="5"></textarea>
                         
                     </div>
                 </div>

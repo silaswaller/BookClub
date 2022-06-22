@@ -1,5 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 const app = express();
 
 app.use(express.json())
@@ -8,11 +10,11 @@ app.use(cors({
     origin: "http://localhost:3000"
 }))
 
-//require("../server/routes/book.routes")(app)
+app.use(cookieParser());
+
 require("./config/mongoose.config");
 require("./routes/book.routes")(app);
+require("./routes/user.routes")(app);
 
-const port = 8000
-
-app.listen(port, () => console.log(`Connected to port ${port}`))
+app.listen(process.env.MY_PORT, () => console.log(`Connected to port ${process.env.MY_PORT}`))
 

@@ -19,7 +19,6 @@ const AllBooks = (props) => {
         })
     }, [])
 
-
     return(
         <div>
             <header>

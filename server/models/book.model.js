@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
-const uniqueValidator = require('mongoose-unique-validator');
 
 const BookSchema = new mongoose.Schema({
     title: {
         type: String,
         required: [true, "The book title is required"],
-        unique: [true, "This book has already been added"],
     },
     author: {
         type: String,
@@ -19,8 +17,6 @@ const BookSchema = new mongoose.Schema({
         type: String,
     },
 }, {timestamps: true});
-
-BookSchema.plugin(uniqueValidator, { message: "This book has already been added" });
 
 const Book = mongoose.model("Book", BookSchema);
 

@@ -9,7 +9,7 @@ const EditBook = (props) => {
         title: "",
         author: "",
         coverArt: "",
-        description: ""
+        description: "",
     });
 
     const [errors, setErrors] = useState([]);
